@@ -22,7 +22,7 @@ getMeteringPointInfo <-
       url = pkg.env$andelenergi.url,
       path = path,
       httr::accept_json(),
-      httr::add_headers(Authorization = base::paste("Bearer ", data_access_token))
+      httr::add_headers(Authorization = paste("Bearer ", data_access_token))
     )
   }
 
