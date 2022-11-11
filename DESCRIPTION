@@ -9,7 +9,8 @@ Maintainer: Henrik Andre Wyss Johansen <hawj@wyss.dk>
 Description: Her the meter point id
 Imports:
   httr,
-  jsonlite
+  jsonlite,
+  knitr
 License: Apache License 2.0
 Encoding: UTF-8
 LazyData: true
