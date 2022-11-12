@@ -6,8 +6,11 @@
 \usage{
 getMeteringPointInfo(data_access_token)
 }
+\arguments{
+\item{data_access_token}{The data_access_token i provided bye get_data_access_token(refreshtoken)}
+}
 \value{
-JSON
+List the function return a list of objects taht contain datapoint information
 }
 \description{
 This function is not finished yet, but should get all the meering point that i have acess to
