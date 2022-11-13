@@ -13,7 +13,6 @@ getDataAccessToken <- function(refreshtoken) {
   token <- refreshtoken
   url <- pkg.env$andelenergi.url
   path <- "/customerapi/api/token"
-  data_access_token_time <<- Sys.time() # Set retrival time in GlobalEnv
   raw_data_access_token <-
     httr::GET(
       url = url,
