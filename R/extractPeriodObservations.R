@@ -11,20 +11,7 @@
 #' @export
 extractPeriodObservations <- function(meter, period) {
   observation <-
-    stats::setNames(
-      data.frame(matrix(ncol = 7, nrow = 0)),
-      c(
-        "meter",
-        "start",
-        "end",
-        "position",
-        "resolution",
-        "quantity",
-        "quality"
-      )
-    )
-  observation$start <- as.POSIXct(observation$start)
-  observation$end <- as.POSIXct(observation$end)
+    pkg.env$dataframeElOverblik()
 
   for (d in period) {
     start_date <-
