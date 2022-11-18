@@ -3,18 +3,14 @@
 \docType{data}
 \name{pkg.env}
 \alias{pkg.env}
-\title{Get Metering Point Information}
+\title{Global variables}
 \format{
-An object of class \code{environment} of length 1.
+An object of class \code{environment} of length 3.
 }
 \usage{
 pkg.env
 }
 \description{
-This function is not finished yet, but should get all the meering point that i have acess to
-I haven testet that correct data is returned when retrieving multiple meteringPointID, since I have only access to one
-}
-\details{
 Global variables
 }
 \keyword{datasets}
