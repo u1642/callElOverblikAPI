@@ -1,16 +1,18 @@
 Package: callElOverblikAPI
 Type: Package
 Title: Functions to call the ElOverblik API
-Version: 0.1.04
+Version: 0.1.04.0007
 Date: 2022-11-06
 Author: Henrik Johansen
 Authors@R: person("Johansen", "Johansen Andre Wyss", email = "hawj@wyss.dk", role = c("cre","aut"))
 Maintainer: Henrik Andre Wyss Johansen <hawj@wyss.dk>
-Description: This package provides functions to beused on the ElOverblik API, It also included functions to extract and format data, making it ready for reporting
+Description: This package provides functions to beused on the ElOverblik API. It also included functions to extract and format data, making it ready for reporting.
 Imports:
   httr,
   jsonlite,
-  knitr
+  knitr,
+  lubridate,
+  stats
 License: Apache License 2.0
 Encoding: UTF-8
 LazyData: true

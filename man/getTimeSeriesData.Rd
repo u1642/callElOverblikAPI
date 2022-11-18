@@ -4,9 +4,17 @@
 \alias{getTimeSeriesData}
 \title{getTimeSeriesData}
 \usage{
-getTimeSeriesData(data_access_token, dateFrom, dateTo, aggregation)
+getTimeSeriesData(
+  meteringPoint,
+  data_access_token,
+  dateFrom,
+  dateTo,
+  aggregation
+)
 }
 \arguments{
+\item{meteringPoint}{The number you have recieved from you r provider}
+
 \item{data_access_token}{Data Access Token created by getDataAccessToken}
 
 \item{dateFrom}{start data from where we retrieve data}
