@@ -1,7 +1,7 @@
 Package: callElOverblikAPI
 Type: Package
 Title: Functions to call the ElOverblik API
-Version: 0.1.04.0007
+Version: 0.1.05.0000
 Date: 2022-11-06
 Author: Henrik Johansen
 Authors@R: person("Johansen", "Johansen Andre Wyss", email = "hawj@wyss.dk", role = c("cre","aut"))
