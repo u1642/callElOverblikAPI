@@ -5,20 +5,33 @@
 #'
 #' @description This function retrieves timesere data from ElOverblik
 #'
-#' @param meter
-#' @param period
-#' @return
+#' @param meter This is your meter number
+#' @param period This is the period fetched from getTimeSerie
+#' @return dataframe Returns dataframe with observations
 #' @export
+extractPeriodObservations <- function(meter, period) {
+  observation <-
+    stats::setNames(
+      data.frame(matrix(ncol = 7, nrow = 0)),
+      c(
+        "meter",
+        "start",
+        "end",
+        "position",
+        "resolution",
+        "quantity",
+        "quality"
+      )
+    )
+  observation$start <- as.POSIXct(observation$start)
+  observation$end <- as.POSIXct(observation$end)
 
-extractPeriodPbservations <- function(meter, period) {
-  meter <- meter
   for (d in period) {
     start_date <-
-      lubridate::with_tz(as.POSIXct(d$timeInterval$start, format = "%Y-%m-%dT%H:%M:%OSZ", tz = "UTC"),
-              tz = "Europe/Copenhagen")
+      as.POSIXct(d$timeInterval$start, format = "%Y-%m-%dT%H:%M:%OSZ", tz = "UTC")
     end_date <-
-      lubridate::with_tz(as.POSIXct(d$timeInterval$end, format = "%Y-%m-%dT%H:%M:%OSZ", tz = "UTC"),
-              tz = "Europe/Copenhagen")
+      as.POSIXct(d$timeInterval$end, format = "%Y-%m-%dT%H:%M:%OSZ", tz = "UTC")
+
     resolution <- d$resolution
 
     for (p in d$Point) {
@@ -34,7 +47,8 @@ extractPeriodPbservations <- function(meter, period) {
         )
       # We are adding data to an data frame outside the function
       # This need to be changed since we cant write to the parrent scope
-      # observation[nrow(observation) + 1,] <<- point_observation
+      observation[nrow(observation) + 1, ] <- point_observation
     }
   }
+  observation
 }
