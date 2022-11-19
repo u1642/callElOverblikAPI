@@ -46,24 +46,3 @@ Quantity.quality <- as.data.frame(rbind(c(A01),c(A02),c(A03),c(A04),c(A05)))
 pkg.env$Quantity.quality <- Quantity.quality
 
 
-pkg.env$dataframeElOverblik <-
-  function() {
-    df <- stats::setNames(
-      data.frame(matrix(ncol = 7, nrow = 0)),
-      c(
-        "meter",
-        "start",
-        "end",
-        "position",
-        "resolution",
-        "quantity",
-        "quality"
-      )
-    )
-    df$start <- as.POSIXct(df$start)
-    df$end <- as.POSIXct(df$end)
-
-    # Return dataframe template
-    df
-  }
-
