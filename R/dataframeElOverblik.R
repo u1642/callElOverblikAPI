@@ -9,7 +9,21 @@
 #' @export
 dataframeElOverblik <-
   function() {
-    pkg.env$dataframeElOverblik
+    df <- stats::setNames(
+      data.frame(matrix(ncol = 7, nrow = 0)),
+      c(
+        "meter",
+        "start",
+        "end",
+        "position",
+        "resolution",
+        "quantity",
+        "quality"
+      )
+    )
+    df$start <- as.POSIXct(df$start)
+    df$end <- as.POSIXct(df$end)
+
+    # Return dataframe template
+    return(df)
   }
-
-
