@@ -10,8 +10,7 @@
 #' @return dataframe Returns dataframe with observations
 #' @export
 extractPeriodObservations <- function(meter, period) {
-  observation <-
-    pkg.env$dataframeElOverblik()
+  observation <- dataframeElOverblik()
 
   for (d in period) {
     start_date <-
@@ -22,11 +21,19 @@ extractPeriodObservations <- function(meter, period) {
     resolution <- d$resolution
 
     for (p in d$Point) {
-      point_observation <- dataframeElOverblik
-
+      point_observation <-
+        data.frame(
+          meter,
+          start_date,
+          end_date,
+          p$position,
+          resolution,
+          p$out_Quantity.quantity,
+          p$out_Quantity.quality
+        )
       # We are adding data to an data frame outside the function
       # This need to be changed since we cant write to the parrent scope
-      observation[nrow(observation) + 1, ] <- point_observation
+      observation[nrow(observation) + 1,] <- point_observation
     }
   }
   observation
