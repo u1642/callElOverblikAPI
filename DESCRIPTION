@@ -1,7 +1,7 @@
 Package: callElOverblikAPI
 Type: Package
 Title: Functions to call the ElOverblik API
-Version: 0.1.05.0001
+Version: 0.1.05.0003
 Date: 2022-11-06
 Author: Henrik Johansen
 Authors@R: person("Johansen", "Johansen Andre Wyss", email = "hawj@wyss.dk", role = c("cre","aut"))
@@ -10,9 +10,8 @@ Description: This package provides functions to beused on the ElOverblik API. It
 Imports:
   httr,
   jsonlite,
-  knitr,
-  lubridate,
-  stats
+  stats,
+  knitr
 License: Apache License 2.0
 Encoding: UTF-8
 LazyData: true
