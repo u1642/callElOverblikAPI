@@ -22,20 +22,20 @@ A03 <- c(
   "A03",
   "Estimeret",
   "Estimated",
-  "Specifies that the grid oper-ator has submitted the quantity to DataHub as an estimate."
+  "Specifies that the grid operator has submitted the quantity to DataHub as an estimate."
 )
 
 A04 <- c(
   "A04",
-  "Målt",
+  "M\u00E5lt",
   "As provided",
-  "Specifies that the grid oper-ator has submitted the quantity to DataHub as measured."
+  "Specifies that the grid operator has submitted the quantity to DataHub as measured."
 )
 
 
 A05 <- c(
   "A05",
-  "Ufuldstændig",
+  "Ufuldst\u00E6ndig",
   "Incomplete",
   "Is applied to an aggregated energy quantity if at least one of the quantities in-cluded in the aggregation has been submitted to Data-Hub with a “missing indica-tor”, meaning that the quantity is not available (as described under code A02).
 "
