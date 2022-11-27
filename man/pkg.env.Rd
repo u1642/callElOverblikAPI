@@ -5,7 +5,7 @@
 \alias{pkg.env}
 \title{Global variables}
 \format{
-An object of class \code{environment} of length 2.
+An object of class \code{environment} of length 1.
 }
 \usage{
 pkg.env
