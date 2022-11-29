@@ -14,12 +14,21 @@
 #' @export
 
 getTimeSeriesData <-
-  function(meteringPoint, data_access_token ,
+  function(meteringPoint,
+           data_access_token ,
            dateFrom,
            dateTo,
-           aggregation) {
+           aggregation = "Actual") {
     path <- "/customerapi/api/meterdata/gettimeseries/"
     url <- pkg.env$andelenergi.url
+
+    # Input validation
+    stopifnot(assertive::assert_is_a_string(meteringPoint))
+    stopifnot(assertive::assert_is_a_string(data_access_token))
+    stopifnot(lubridate::is.POSIXct(dateFrom))
+    stopifnot(lubridate::is.POSIXct(dateTo))
+    match.arg(aggregation = c("Actual", "Quarter", "Hour", "Day", "Month", "Year"))
+
     timeseries_data <- data.frame(dateFrom, dateTo, aggregation)
     meter_jason <-
       jsonlite::toJSON(list(meteringPoints = list(meteringPoint = meteringPoint)))
@@ -45,5 +54,3 @@ getTimeSeriesData <-
       encode = "json"
     )
   }
-
-
