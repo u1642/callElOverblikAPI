@@ -13,7 +13,8 @@ getDataAccessToken <- function(refreshtoken) {
   token <- refreshtoken
   url <- pkg.env$andelenergi.url
   path <- "/customerapi/api/token"
-  raw_data_access_token <-
+
+    raw_data_access_token <-
     httr::GET(
       url = url,
       path = path,
