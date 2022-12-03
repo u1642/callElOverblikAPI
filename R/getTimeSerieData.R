@@ -28,6 +28,7 @@ getTimeSeriesData <-
     stopifnot(lubridate::is.POSIXct(dateFrom))
     stopifnot(lubridate::is.POSIXct(dateTo))
     match.arg(aggregation = c("Actual", "Quarter", "Hour", "Day", "Month", "Year"))
+    # You can request data for a maximum period of 730 days at a time
 
     timeseries_data <- data.frame(dateFrom, dateTo, aggregation)
     meter_jason <-
