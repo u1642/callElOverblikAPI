@@ -7,12 +7,32 @@
 getMeteringPointInfo(data_access_token)
 }
 \arguments{
-\item{data_access_token}{The data_access_token i provided bye get_data_access_token(refreshtoken)}
+\item{data_access_token}{The data_access_token i provided by get_data_access_token(refreshtoken)}
 }
 \value{
-List the function return a list of objects taht contain datapoint information
+A list containing
 }
 \description{
-This function is not finished yet, but should get all the meering point that i have acess to
-I haven testet that correct data is returned when retrieving multiple meteringPointID, since I have only access to one
+The purpose of this function is to extract the information related to the Metering Point.
+this extraction provides the following attributes.
+\itemize{
+\item [streetCode] Street code – part of metering point location address.
+\item [streetName] Street name – part of metering point location address.
+\item [ buildingNumber] Building number – part of metering point location address.
+\item [floorId] Floor id – part of metering point location address.
+\item [roomId] Room id – part of metering point location address.postcode String
+\item [municipalityCode]
+\item [locationDescription]
+\item [settlementMethod]
+\item [firstConsumerPartyName]
+\item [secondConsumerPartyName]
+\item [settlementMethod]
+\item [meterReadingOccurrence]
+\item [meterNumber]
+\item [meterNumber]
+\item [consumerStartDate]
+}
+}
+\details{
+The purpose of this function is to extract the information related to the Metering Point
 }
