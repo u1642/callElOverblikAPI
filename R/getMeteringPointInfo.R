@@ -1,16 +1,34 @@
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Install Package:           'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
 #' Get Metering Point Information
 #'
-#' @description This function is not finished yet, but should get all the meering point that i have acess to
-#' I haven testet that correct data is returned when retrieving multiple meteringPointID, since I have only access to one
+#' The purpose of this function is to extract the information related to the Metering Point
+#'
+#' @description The purpose of this function is to extract the information related to the Metering Point.
+#' this extraction provides the following attributes.
+#' * \[streetCode\] Street code – part of metering point location address.
+#' * \[streetName\] Street name – part of metering point location address.
+#' * \[ buildingNumber\] Building number – part of metering point location address.
+#' * \[floorId\] Floor id – part of metering point location address.
+#' * \[roomId\] Room id – part of metering point location address.postcode String
+#' * \[municipalityCode\]
+#' * \[locationDescription\]
+#' * \[settlementMethod\]
+#' * \[firstConsumerPartyName\]
+#' * \[secondConsumerPartyName\]
+#' * \[settlementMethod\]
+#' * \[meterReadingOccurrence\]
+#' * \[meterNumber\]
+#' * \[meterNumber\]
+#' * \[consumerStartDate\]
+#' @md
 #'
 #'
-#' @param data_access_token The data_access_token i provided bye get_data_access_token(refreshtoken)
-#' @return List the function return a list of objects taht contain datapoint information
+#' meteringPointId,typeOfMP,balanceSupplierName,postcode,cityName,hasRelation,consumerCVR,dataAccessCVR,childMeteringPoints)
+#'
+#'
+#'
+#'
+#' @param data_access_token The data_access_token i provided by get_data_access_token(refreshtoken)
+#' @return A list containing
 #' @export
 
 getMeteringPointInfo <-
