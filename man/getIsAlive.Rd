@@ -7,9 +7,6 @@
 getIsAlive()
 }
 \description{
-Checks if ElOverblik endpoint is alive
-}
-\examples{
-#bmi.vals <- rnorm(n = 50, mean = 25, sd = 3)
-
+Checks if ElOverblik endpoint is alive.
+If we are experiencing more traffic than we can handle, this endpoint may return HTTP 503. The status currently refreshes every 60 seconds.
 }
