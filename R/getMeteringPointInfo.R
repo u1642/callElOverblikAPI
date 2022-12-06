@@ -6,7 +6,7 @@
 #' this extraction provides the following attributes.
 #' * \[streetCode\] Street code – part of metering point location address.
 #' * \[streetName\] Street name – part of metering point location address.
-#' * \[ buildingNumber\] Building number – part of metering point location address.
+#' * \[buildingNumber\] Building number – part of metering point location address.
 #' * \[floorId\] Floor id – part of metering point location address.
 #' * \[roomId\] Room id – part of metering point location address.postcode String
 #' * \[municipalityCode\]
