@@ -9,7 +9,7 @@ getTimeSeriesData(
   data_access_token,
   dateFrom,
   dateTo,
-  aggregation
+  aggregation = "Actual"
 )
 }
 \arguments{
