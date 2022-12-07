@@ -3,6 +3,7 @@
 export(dataframeElOverblik)
 export(enrichRawObservations)
 export(extractPeriodObservations)
+export(getCharges)
 export(getDataAccessToken)
 export(getIsAlive)
 export(getMeteringPointInfo)
