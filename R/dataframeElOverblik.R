@@ -1,11 +1,11 @@
-#' getTimeSeriesData
+#' dataframeElOverblik
 #'
-#' This set of functions is handling Token
+#' This function defines a dataframe used by the package
 #'
 #'
 #' @description This function retrieves timesere data from ElOverblik
 #'
-#' @return dataframe Function returns dataframe, the DF doen contains but ensures at al modules uses the same FD
+#' @return dataframe Function returns dataframe definition
 #' @export
 dataframeElOverblik <-
   function() {
