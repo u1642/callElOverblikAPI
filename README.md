@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # callElOverblikAPI
 
 This package provide functions to fetch data form eloverblik.dk, and
