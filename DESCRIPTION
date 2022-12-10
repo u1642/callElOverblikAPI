@@ -4,9 +4,9 @@ Title: Functions to call the ElOverblik API
 Version: 0.1.06.0002
 Date: 2022-12-210
 Author: Henrik Johansen
-Authors@R: person("Johansen", "Johansen Andre Wyss", email = "hawj@wyss.dk", role = c("cre","aut"))
-Maintainer: Henrik Andre Wyss Johansen <hawj@wyss.dk>
-Description: This package provides functions to beused on the ElOverblik API. It also included functions to extract and format data, making it ready for reporting.
+Authors@R: person("Johansen", "Johansen Andre Wyss", email = "hawj@redchili.dk", role = c("cre","aut"))
+Maintainer: Henrik Andre Wyss Johansen <hawj@redchili.dk>
+Description: This package provides functions to be used to call the ElOverblik API. It also included functions to extract and format data, making it ready for reporting.
 Imports:
   httr,
   jsonlite,
