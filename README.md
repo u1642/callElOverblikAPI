@@ -4,6 +4,7 @@ This package provide functions to fetch data form eloverblik.dk, and some for ex
 
 sysdata.rda
 Contains errorcodes, and some translation to text
+You can import the data og look into the /data-raw/ folder where the same data is placed
 
 declareVariables.R
 Setting env variables
@@ -23,6 +24,7 @@ Get pricing data
 dataframeElOverblik.R
 Just a definition used internally
 
+extractPeriodObservations.R
 This function will provide an data frame based on the data retrieved from getTimeSerieData.R
 
 enrichRawObservations.R
