@@ -6,6 +6,14 @@
 \usage{
 getCharges(meteringPoint, data_access_token)
 }
+\arguments{
+\item{data_access_token}{Data Access Token created by getDataAccessToken}
+
+\item{meter}{This is your meter number identifying your meter e.g. "123456789012356789"}
+}
+\value{
+pricing_data List of pricing data
+}
 \description{
 This function return pricing data
 }
