@@ -13,7 +13,7 @@ getTimeSeriesData(
 )
 }
 \arguments{
-\item{meteringPoint}{The number you have recieved from you r provider}
+\item{meteringPoint}{The number you have recieved from your provider}
 
 \item{data_access_token}{Data Access Token created by getDataAccessToken}
 
