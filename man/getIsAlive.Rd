@@ -6,7 +6,11 @@
 \usage{
 getIsAlive()
 }
+\value{
+"true" or an http status code
+}
 \description{
 Checks if ElOverblik endpoint is alive.
-If we are experiencing more traffic than we can handle, this endpoint may return HTTP 503. The status currently refreshes every 60 seconds.
+If we are experiencing more traffic than we can handle, this endpoint may return HTTP 503. The status currently
+refreshes every 60 seconds.
 }
