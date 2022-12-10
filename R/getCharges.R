@@ -4,7 +4,9 @@
 #'
 #'
 #' @description This function return pricing data
-#'
+#' @param meter This is your meter number identifying your meter e.g. "123456789012356789"
+#' @param data_access_token Data Access Token created by getDataAccessToken
+#' @return pricing_data
 
 #' @export
 
