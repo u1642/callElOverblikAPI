@@ -2,16 +2,16 @@
 % Please edit documentation in R/dataframeElOverblik.R
 \name{dataframeElOverblik}
 \alias{dataframeElOverblik}
-\title{getTimeSeriesData}
+\title{dataframeElOverblik}
 \usage{
 dataframeElOverblik()
 }
 \value{
-dataframe Function returns dataframe, the DF doen contains but ensures at al modules uses the same FD
+dataframe Function returns dataframe definition
 }
 \description{
 This function retrieves timesere data from ElOverblik
 }
 \details{
-This set of functions is handling Token
+This function defines a dataframe used by the package
 }
