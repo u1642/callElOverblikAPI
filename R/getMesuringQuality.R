@@ -4,7 +4,7 @@
 #' Code = A01 DK translation = Korrigeret UK translation = Adjusted Tekst =  Korrigeret
 #'
 #'
-#' @description This functionen
+#' @description This functionen can only take one variable, not vector or dataframe, use lapply
 #'
 #' @param core The quality code from the metering observation
 #' @param lang The language you want returned e.g. DK or UK, default = UK
@@ -19,6 +19,6 @@ getMesuringQuality <- function(code, lang = "UK") {
     return(result)
   } else
   {
-    return("ERROR in lookup")
+    return("ERROR")
   }
 }
