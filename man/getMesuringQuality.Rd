@@ -15,7 +15,7 @@ getMesuringQuality(code, lang = "UK")
 text Translated quality code
 }
 \description{
-This functionen
+This functionen can only take one variable, not vector or dataframe, use lapply
 }
 \details{
 This function translate from the quality code A1 .. A5 to text
