@@ -13,15 +13,15 @@ getTimeSeriesData(
 )
 }
 \arguments{
-\item{meteringPoint}{The number you have recieved from your provider}
+\item{meteringPoint}{The number you have received from your provider}
 
 \item{data_access_token}{Data Access Token created by getDataAccessToken}
 
 \item{dateFrom}{start data from where we retrieve data}
 
-\item{dateTo}{end date from which we retrieve data, note dateFrom - dateTo should not be greater than 720 days}
+\item{dateTo}{end date from which we retrieve data, note dateFrom - dateTo should not be greater than 730 days}
 
-\item{aggregation}{see manual}
+\item{aggregation}{see manual (c("Actual", "Quarter", "Hour", "Day", "Month", "Year"))}
 }
 \value{
 data_access_token This is the token you have to use for each call to andelenergi API

@@ -1,8 +1,8 @@
 Package: callElOverblikAPI
 Type: Package
 Title: Functions to call the ElOverblik API
-Version: 0.1.06.0002
-Date: 2022-12-210
+Version: 0.1.07.0001
+Date: 2022-12-24
 Author: Henrik Johansen
 Authors@R: person("Johansen", "Johansen Andre Wyss", email = "hawj@redchili.dk", role = c("cre","aut"))
 Maintainer: Henrik Andre Wyss Johansen <hawj@redchili.dk>
@@ -16,7 +16,7 @@ Imports:
 License: Apache License 2.0
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 VignetteBuilder: knitr
 Depends: 
     R (>= 2.10)
