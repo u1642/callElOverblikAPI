@@ -10,7 +10,7 @@ getMeteringPointInfo(data_access_token)
 \item{data_access_token}{The data_access_token i provided by get_data_access_token(refreshtoken)}
 }
 \value{
-A list containing
+list A list containing all the basic information for the metering point
 }
 \description{
 The purpose of this function is to extract the information related to the Metering Point.
@@ -18,7 +18,7 @@ this extraction provides the following attributes.
 \itemize{
 \item [streetCode] Street code – part of metering point location address.
 \item [streetName] Street name – part of metering point location address.
-\item [ buildingNumber] Building number – part of metering point location address.
+\item [buildingNumber] Building number – part of metering point location address.
 \item [floorId] Floor id – part of metering point location address.
 \item [roomId] Room id – part of metering point location address.postcode String
 \item [municipalityCode]
@@ -28,7 +28,6 @@ this extraction provides the following attributes.
 \item [secondConsumerPartyName]
 \item [settlementMethod]
 \item [meterReadingOccurrence]
-\item [meterNumber]
 \item [meterNumber]
 \item [consumerStartDate]
 }
