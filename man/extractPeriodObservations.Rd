@@ -7,7 +7,7 @@
 extractPeriodObservations(meter, period)
 }
 \arguments{
-\item{meter}{This is your meter number}
+\item{meter}{This is your meter number identifying your meter e.g. "123456789012356789"}
 
 \item{period}{This is the period fetched from getTimeSerie}
 }

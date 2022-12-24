@@ -5,7 +5,7 @@
 #'
 #' @description This function retrieves timesere data from ElOverblik
 #'
-#' @param meter This is your meter number
+#' @param meter This is your meter number identifying your meter e.g. "123456789012356789"
 #' @param period This is the period fetched from getTimeSerie
 #' @return dataframe Returns dataframe with observations
 #' @export

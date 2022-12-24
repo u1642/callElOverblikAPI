@@ -1,12 +1,12 @@
 Package: callElOverblikAPI
 Type: Package
 Title: Functions to call the ElOverblik API
-Version: 0.1.05.0006
-Date: 2022-11-25
+Version: 0.1.07.0002
+Date: 2022-12-24
 Author: Henrik Johansen
-Authors@R: person("Johansen", "Johansen Andre Wyss", email = "hawj@wyss.dk", role = c("cre","aut"))
-Maintainer: Henrik Andre Wyss Johansen <hawj@wyss.dk>
-Description: This package provides functions to beused on the ElOverblik API. It also included functions to extract and format data, making it ready for reporting.
+Authors@R: person("Johansen", "Johansen Andre Wyss", email = "hawj@redchili.dk", role = c("cre","aut"))
+Maintainer: Henrik Andre Wyss Johansen <hawj@redchili.dk>
+Description: This package provides functions to be used to call the ElOverblik API. It also included functions to extract and format data, making it ready for reporting.
 Imports:
   httr,
   jsonlite,
@@ -16,7 +16,7 @@ Imports:
 License: Apache License 2.0
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 VignetteBuilder: knitr
 Depends: 
     R (>= 2.10)

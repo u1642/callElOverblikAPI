@@ -5,11 +5,11 @@
 #'
 #' @description This function retrieves timesere data from ElOverblik
 #'
-#' @param meteringPoint The number you have recieved from you r provider
+#' @param meteringPoint The number you have received from your provider
 #' @param data_access_token Data Access Token created by getDataAccessToken
 #' @param dateFrom start data from where we retrieve data
-#' @param dateTo end date from which we retrieve data, note dateFrom - dateTo should not be greater than 720 days
-#' @param aggregation see manual
+#' @param dateTo end date from which we retrieve data, note dateFrom - dateTo should not be greater than 730 days
+#' @param aggregation see manual (c("Actual", "Quarter", "Hour", "Day", "Month", "Year"))
 #' @return data_access_token This is the token you have to use for each call to andelenergi API
 #' @export
 
@@ -23,11 +23,12 @@ getTimeSeriesData <-
     url <- pkg.env$andelenergi.url
 
     # Input validation
-    stopifnot(assertive::assert_is_a_string(meteringPoint))
-    stopifnot(assertive::assert_is_a_string(data_access_token))
-    stopifnot(lubridate::is.POSIXct(dateFrom))
-    stopifnot(lubridate::is.POSIXct(dateTo))
-    match.arg(aggregation = c("Actual", "Quarter", "Hour", "Day", "Month", "Year"))
+    match.arg(aggregation, c("Actual", "Quarter", "Hour", "Day", "Month", "Year"))
+    # stopifnot(assertive::assert_is_a_string(meteringPoint))
+    # stopifnot(assertive::assert_is_a_string(data_access_token))
+    # stopifnot(lubridate::is.POSIXct(dateFrom))
+    # stopifnot(lubridate::is.POSIXct(dateTo))
+
     # You can request data for a maximum period of 730 days at a time
 
     timeseries_data <- data.frame(dateFrom, dateTo, aggregation)
