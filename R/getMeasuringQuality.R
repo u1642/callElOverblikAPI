@@ -11,6 +11,9 @@
 #' @return text Translated quality code
 #' @export
 getMeasuringQuality <- function(code, lang = "UK") {
+  # Check for available language
+  match.arg(lang, c("DK", "UK"))
+
   # Return the quality text
   index = (Quantity.quality$Code == code)
   result = Quantity.quality[index,lang]
@@ -19,6 +22,6 @@ getMeasuringQuality <- function(code, lang = "UK") {
     return(result)
   } else
   {
-    return("ERROR")
+    return("ERROR code not available")
   }
 }
