@@ -1,9 +1,9 @@
-#' getTimeSeriesData
+#' extractPeriodObservations
 #'
-#' This set of functions is handling Token
+#' This set of functions extract the time serie data recieved from ger time serie data
 #'
 #'
-#' @description This function retrieves timesere data from ElOverblik
+#' @description
 #'
 #' @param meter This is your meter number identifying your meter e.g. "123456789012356789"
 #' @param period This is the period fetched from getTimeSerie
