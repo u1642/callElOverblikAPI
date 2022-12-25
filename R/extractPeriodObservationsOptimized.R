@@ -11,15 +11,16 @@
 #' @return dataframe Returns dataframe with observations
 #' @export
 extractPeriodObservationsOptimized <- function(meter, period) {
+  # Define the data
   observation <- dataframeElOverblik()
 
   for (d in period) {
     getBasicData(d)
 
-
     for (p in d$Point) {
-      getObservation(p)
-
+      # We are adding data to an data frame outside the function
+      # This need to be changed since we cant write to the parrent scope
+      observation[nrow(observation) + 1,] <- getObservation(p)
     }
   }
   observation
