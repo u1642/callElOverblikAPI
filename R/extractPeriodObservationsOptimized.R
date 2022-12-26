@@ -16,12 +16,13 @@ extractPeriodObservationsOptimized <- function(meter, period) {
 
   for (d in period) {
     getBasicData(d)
+    l <- period[[d]]
+    df <- data.frame(matrix(unlist(l), nrow=length(l), byrow=FALSE))
 
-    for (p in d$Point) {
+
       # We are adding data to an data frame outside the function
       # This need to be changed since we cant write to the parrent scope
       observation[nrow(observation) + 1,] <- getObservation(p)
-    }
   }
   observation
 }
